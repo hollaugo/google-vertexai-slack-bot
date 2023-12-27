@@ -1,15 +1,15 @@
 # Slack Bot with Vertex AI Integration
 
 ## Overview
-This Slack bot is designed to process text inputs using the Vertex AI API and supports a custom functionality to send messages back to Slack channels. It listens to messages in Slack, sends the text to the Vertex AI API for processing, and interprets the AI's response for any specific actions like posting messages to a channel.
+This repo contains sample implementations of Gemini AI API for a slack application. Example includes simple text generation and function calling in Gemini 
 
 [![Watch the full setup video for Slack and Vertex AI Here](https://img.youtube.com/vi/-ocvFMjr_xE/maxresdefault.jpg)](https://youtu.be/-ocvFMjr_xE?si=V3eB0gV7E8KWk-OE)
 
 
 ## Features
-- Text processing with Vertex AI's Generative Model.
-- Custom function to post messages to Slack channels based on AI's response.
-- Logging for debugging and monitoring.
+- Text Generation with Gemini AI API via Vertex AI Service 
+- Function Calling - Create Ticket Example 
+
 
 ## Requirements
 - Python 3.9
@@ -40,9 +40,14 @@ Set the following environment variables:
 - `SLACK_BOT_TOKEN`: Your Slack Bot User OAuth Token.
 - `SLACK_APP_TOKEN`: Your Slack App Token
 
-### Running the Application
+### Running the pure Gemini Bot for Text Generation 
 ```bash
 python gemini_bot.py
+```
+
+### Running the pure Gemini Bot for Function Calling 
+ ```bash
+python gemini_bot_func_calling.py
 ```
 
 ## Usage
