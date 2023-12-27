@@ -6,6 +6,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 from dotenv import load_dotenv
 import logging
 
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -31,8 +32,6 @@ def generate(text):
         return responses.candidates[0].content.parts[0].text
     else:
         return "No response generated."
-
-
 
 # Initialize the Slack app
 load_dotenv()
